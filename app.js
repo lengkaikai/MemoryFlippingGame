@@ -76,6 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardArray.length; i++) {
             //creating an image element
             const card = document.createElement('img')
+            //I added this to distinguish the border
+            card.style.border = "thick solid"
+            //document.getElementById('img').style.border = "thick solid #0000FF";
             //setting attribute linking the relative
             card.setAttribute('src', 'images/blank.png')
             //give them id
