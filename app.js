@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //**the length should be equal to two only, if so invoke the function check for match */
         if (cardsChosen.length === 2) {
             //settimeout gives some time 500 milliseconds to check
-            setTimeout(checkForMatch, 500)
+            setTimeout(checkForMatch, 300)
         }
     }
 
