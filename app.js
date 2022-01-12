@@ -95,7 +95,15 @@ document.addEventListener('DOMContentLoaded', () => {
         var cards = document.querySelectorAll('img')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
-        if (cardsChosen[0] === cardsChosen[1]) {
+
+        //this check if an image is clicked twice
+        if(optionOneId == optionTwoId) {
+            cards[optionOneId].setAttribute('src', 'images/blank.png')
+            cards[optionTwoId].setAttribute('src', 'images/blank.png')
+            alert('You have clicked the same image!')
+        }
+
+        else if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
             cards[optionOneId].setAttribute('src', 'images/white.png')
             cards[optionTwoId].setAttribute('src', 'images/white.png')
